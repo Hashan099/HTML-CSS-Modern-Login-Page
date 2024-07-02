@@ -1,0 +1,138 @@
+@import 'configs';
+@import 'mixins';
+@import 'variables';
+
+body{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    color:$text-color;
+
+}
+
+main{
+
+    background-image: url('../images/background.png');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    @include flexcenter(row, nowrap);
+
+}
+
+
+.login-container{
+
+    background-color:$background-color;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    height: 500px;
+    width: 400px;
+    @include flexcenter(column, nowrap);
+   
+
+    .login__heading{
+        margin-bottom: 3rem;
+        font-size: 3rem;
+    }
+
+    .login__subheading{
+
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .login__input{
+
+        background-color:whitesmoke;
+        border: none;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        height: 1.8rem;
+        width: 12rem;
+        text-align: center;
+        color: rgb(0, 0, 0);
+
+        &:active, :focus{
+
+            border: none;
+        }
+    }
+
+
+    .login__button{
+
+        width: 12rem;
+        height: 2rem;
+        margin: 1.5rem 1.5rem;
+        border-radius: 0.4rem;
+        background-color: rgb(255, 255, 255);
+
+        &:hover, a:hover{
+            background-color: rgba(116, 153, 233, 0.233);
+            color: whitesmoke;
+        }
+    
+    }
+
+
+    .remember-me{
+
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+    }
+
+    & .sign-up{
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+
+    & .login__button-social{
+
+        height: 2rem;
+        width: 100px;
+        border-radius: 0.5rem;
+
+       
+        &:hover{
+
+            background-color: rgba(116, 153, 233, 0.233);
+            color: whitesmoke;
+        }
+    }
+
+    
+}
+
+
+@media screen and (max-width: 768px) {
+
+    main{
+        height: auto;
+        width: auto;
+    }
+
+
+    .login-container{
+
+      
+       display: flex;
+       flex-flow: column nowrap;
+       justify-content: center;
+       align-items: center;
+       padding: 4rem;
+       margin: 2rem;
+       
+       .login__input{
+        width: auto;
+       }
+    }
+
+
+
+    
+}

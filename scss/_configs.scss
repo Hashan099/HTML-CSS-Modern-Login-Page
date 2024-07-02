@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+img{
+    display: block;
+}
+
+
+a:any-link{
+
+    text-decoration: none;
+    display: block;
+}
+
+.hidden{
+
+    display: none;
+}
+
+
+button{
+
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    
+    <main>
+
+        <section class="login-container">
+
+            <h1 class="login__heading">Login</h1>
+            <h3 class="login__subheading">Have and Account ?</h3>
+
+            <form class="login__form" action="#" method="post">
+                
+                <div class="login__form-group">
+                    <label for="username" class="hidden" title="username">Username</label>
+                    <input type="text" name="username" id="username" class="login__input" placeholder="Username">
+                </div>
+
+                <div class="login__form-group">
+                    <label for="password" class="hidden" title="password">Password</label>
+                    <input type="password" name="password" id="password" class="login__input" placeholder="Password" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$
+                    ">
+                </div>
+
+                <div class="login__form__group">
+                    <button class="login__button">Login</button>
+                </div>
+                
+                <div class="login__form-group">
+                    <div class="remember-me"><input  type="checkbox" name="remember me" id="remember"> <span> Remember me </span></div>
+
+                </div>
+
+                <p class="sign-up">-- or sign up with --</p>
+
+                <div class="login__form-group">
+
+                    <button class="login__button-social">Facebook</button>
+                    <button class="login__button-social">Google</button>
+
+                </div>
+            </form>
+        </section>
+
+
+
+    </main>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+a:-moz-any-link {
+  text-decoration: none;
+  display: block;
+}
+
+a:any-link {
+  text-decoration: none;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+main {
+  background-image: url("../images/background.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.login-container {
+  background-color: rgba(52, 126, 223, 0.4);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  height: 500px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.login-container .login__heading {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+.login-container .login__subheading {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.login-container .login__input {
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  height: 1.8rem;
+  width: 12rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.login-container .login__input:active, .login-container .login__input :focus {
+  border: none;
+}
+.login-container .login__button {
+  width: 12rem;
+  height: 2rem;
+  margin: 1.5rem 1.5rem;
+  border-radius: 0.4rem;
+  background-color: rgb(255, 255, 255);
+}
+.login-container .login__button:hover, .login-container .login__button a:hover {
+  background-color: rgba(116, 153, 233, 0.233);
+  color: whitesmoke;
+}
+.login-container .remember-me {
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+.login-container .sign-up {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+.login-container .login__button-social {
+  height: 2rem;
+  width: 100px;
+  border-radius: 0.5rem;
+}
+.login-container .login__button-social:hover {
+  background-color: rgba(116, 153, 233, 0.233);
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    height: auto;
+    width: auto;
+  }
+  .login-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    margin: 2rem;
+  }
+  .login-container .login__input {
+    width: auto;
+  }
+}/*# sourceMappingURL=main.css.map */
